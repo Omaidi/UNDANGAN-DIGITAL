@@ -1,0 +1,37 @@
+# Biarkan SEMUA file diabaikan dulu oleh git
+*
+
+# Lalu baru kita Kecualikan (Allow) file-file penting di bawah ini:
+
+# 1. File Utama (WAKIB)
+!index.html
+!style.css
+!script.js
+!.gitignore
+
+# 2. File Audio (Musik)
+!undanganaudio.mp3
+
+# 3. File Gambar Utama & Background
+!bg-opening.webp
+!bg-utama.webp
+!bg-cerita.webp
+!bg-rsvp.webp
+!bg-nih.webp
+!foto-quran.webp
+
+# 4. File Mempelai & Hiasan
+!mempelai-pria.webp
+!mempelai-wanita.webp
+!gunungan.png
+
+# 5. File Galeri (1-9)
+!galeri1.webp
+!galeri2.webp
+!galeri3.webp
+!galeri4.webp
+!galeri5.webp
+!galeri6.webp
+!galeri7.webp
+!galeri8.webp
+!galeri9.webp

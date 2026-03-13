@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Ghufron, S.sos. & Syarifah, S.pd.</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Official Wedding Invitation for Ghufron, S.sos. & Syarifah, S.pd.. Join us in celebrating our special day.">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload Critical Images -->
+    <link rel="preload" as="image" href="bg-opening.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="bg-utama.webp">
+    <link rel="preload" as="image" href="mempelai-pria.webp">
+    <link rel="preload" as="image" href="mempelai-wanita.webp">
+</head>
+
+<body>
+    <!-- Controls -->
+    <div id="controls-container">
+        <button id="scroll-control" class="control-btn" title="Auto Scroll">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+        <button id="music-control" class="control-btn pulse" title="Play/Pause Music">
+            <i class="fas fa-play"></i>
+        </button>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="undanganaudio.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Cover Section -->
+    <section id="cover" class="cover">
+        <div class="cover-content" data-aos="fade-up">
+            <p class="welcome-text">SURAT UNDANGAN</p>
+            <h1 class="couple-name" data-animate="animate__fadeIn">
+                <span class="mempelai-nama">Ghufron, S.sos.</span>
+                <span class="mempelai-dan">&</span>
+                <span class="mempelai-nama">Syarifah, S.pd.</span>
+            </h1>
+            <p class="invitation-text">Kepada Bapak/Ibu/Saudara/i:</p>
+            <div class="guest-name-box">
+                <h3 id="guest-name">Nama Tamu</h3>
+            </div>
+            <button id="open-invitation" class="btn-primary">
+                <i class="fas fa-envelope-open"></i> Buka Undangan
+            </button>
+        </div>
+    </section>
+
+    <!-- Main Content Container (Initially Hidden) -->
+    <main id="main-invitation" class="hidden">
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+            <div class="hero-content" data-aos="zoom-in">
+                <p class="the-wedding-of" data-animate="animate__fadeInDown">THE WEDDING OF</p>
+                <h1 class="hero-names" data-animate="animate__zoomIn">
+                    <span class="mempelai-nama">Ghufron, S.sos.</span>
+                    <span class="mempelai-dan">&</span>
+                    <span class="mempelai-nama">Syarifah, S.pd.</span>
+                </h1>
+                <p class="hero-date" data-animate="animate__fadeInUp">Minggu, 22 Maret 2026</p>
+            </div>
+        </section>
+
+        <!-- Salam Section -->
+        <section class="salam-section">
+
+            <div class="container">
+                <div class="salam-box">
+                    <h2 class="arabic-salam">Assalamualaikum Wr. Wb.</h2>
+                    <p>Tanpa mengurangi rasa hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/i pada acara resepsi
+                        pernikahan kami.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Couple Section -->
+        <section id="couple" class="couple">
+
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Mempelai</h2>
+                </div>
+                <div class="couple-grid">
+                    <div class="groom" data-animate="animate__fadeInLeft">
+                        <div class="couple-img-container" data-animate="animate__zoomIn">
+                            <img src="mempelai-pria.webp" alt="Ghufron, S.sos." class="couple-img img-groom" loading="eager" decoding="async" fetchpriority="high">
+                        </div>
+                        <h3>Ghufron, S.sos.</h3>
+                        <p class="parents">Putra Pertama dari Bapak Suja'i & Ibu Suhriyah</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/ufron.mp?igsh=MWY4Y2RzdG8yZ3AwZw==" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="and-symbol" data-animate="animate__rotateIn">&</div>
+                    <div class="bride" data-animate="animate__fadeInRight">
+                        <div class="couple-img-container" data-animate="animate__zoomIn">
+                            <img src="mempelai-wanita.webp" alt="Syarifah, S.pd." class="couple-img img-bride" loading="eager" decoding="async" fetchpriority="high">
+                        </div>
+                        <h3>Syarifah, S.pd.</h3>
+                        <p class="parents">Putri Bungsu dari Bapak Abd. Bari & (Almh) Ibu Farhah</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details (Akad & Resepsi) -->
+        <section id="event" class="event">
+
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Acara</h2>
+                </div>
+                <div class="event-grid">
+                    <div class="event-card" data-animate="animate__fadeInUp">
+                        <h3>Akad Nikah</h3>
+                        <p class="date">Minggu, 22 Maret 2026</p>
+
+                        <p class="time">07:00 - 10:00 WIB</p>
+                        <p class="location">Dusun manggajang Desa Palenggiyan Kedungdung Kab. Sampang</p>
+
+                        <!-- Mini Countdown -->
+                        <div class="mini-countdown" data-date="2026-03-22T07:00:00">
+                            <div class="mini-item">
+                                <span class="num days">00</span>
+                                <span class="lab">Hari</span>
+                            </div>
+                            <div class="mini-item">
+                                <span class="num hours">00</span>
+                                <span class="lab">Jam</span>
+                            </div>
+                            <div class="mini-item">
+                                <span class="num mins">00</span>
+                                <span class="lab">Menit</span>
+                            </div>
+                            <div class="mini-item">
+                                <span class="num secs">00</span>
+                                <span class="lab">Detik</span>
+                            </div>
+                        </div>
+
+                        <a href="https://www.google.com/maps?q=-7.06506,113.285006" target="_blank"
+                            class="btn-secondary">Lihat Peta</a>
+                    </div>
+                    <div class="event-card" data-animate="animate__fadeInUp">
+                        <h3>Resepsi</h3>
+                        <p class="date">Minggu, 22 Maret 2026</p>
+
+                        <p class="time">18:00 - Selesai</p>
+                        <p class="location">Dusun manggajang Desa Palenggiyan Kedungdung Kab. Sampang</p>
+
+                        <!-- Mini Countdown -->
+                        <div class="mini-countdown" data-date="2026-03-22T18:00:00">
+                            <div class="mini-item">
+                                <span class="num days">00</span>
+                                <span class="lab">Hari</span>
+                            </div>
+                            <div class="mini-item">
+                                <span class="num hours">00</span>
+                                <span class="lab">Jam</span>
+                            </div>
+                            <div class="mini-item">
+                                <span class="num mins">00</span>
+                                <span class="lab">Menit</span>
+                            </div>
+                            <div class="mini-item">
+                                <span class="num secs">00</span>
+                                <span class="lab">Detik</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="location-section">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Lokasi Acara</h2>
+                    <p>Dusun manggajang Desa Palenggiyan Kedungdung Kab. Sampang</p>
+                </div>
+                <div class="location-wrapper" data-aos="zoom-in">
+                    <div class="map-card">
+                        <div class="map-frame">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=-7.06506,113.285006&z=17&t=k&output=embed" 
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="map-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Dusun manggajang Desa Palenggiyan Kedungdung Kab. Sampang</span>
+                            </div>
+                            <a href="https://www.google.com/maps?q=-7.06506,113.285006" target="_blank" class="btn-primary map-btn">
+                                <i class="fas fa-directions"></i> Buka Petunjuk Jalan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combined Story & Quote Section -->
+        <section id="story-quote" class="story-quote-section">
+            <div class="story-quote-bg"></div>
+
+            <div class="container">
+                <!-- Story Part -->
+                <div class="story-part">
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Our Love Story</h2>
+                    </div>
+                    <div class="story-timeline">
+                        <div class="story-item" data-aos="fade-right">
+                            <div class="story-year">2020</div>
+                            <div class="story-content">
+                                <h3>Awal Bertemu</h3>
+                                <p>Di tahun 2020, kita memulai kisah cinta kita. Berawal dari perkenalan sederhana yang
+                                    tak disengaja, namun menjadi awal dari segalanya.</p>
+                            </div>
+                        </div>
+                        <div class="story-item" data-aos="fade-left">
+                            <div class="story-year">2022</div>
+                            <div class="story-content">
+                                <h3>Menjalin Hubungan</h3>
+                                <p>Seiring berjalannya waktu, rasa nyaman pun tumbuh. Kita memutuskan untuk berkomitmen
+                                    dan belajar memahami satu sama lain dalam suka maupun duka.</p>
+                            </div>
+                        </div>
+                        <div class="story-item" data-aos="fade-right">
+                            <div class="story-year">2024</div>
+                            <div class="story-content">
+                                <h3>Lamaran</h3>
+                                <p>Dengan niat yang serius, sebuah langkah besar diambil. Momen penuh haru saat meminta
+                                    restu kepada kedua orang tua untuk membangun masa depan bersama.</p>
+                            </div>
+                        </div>
+                        <div class="story-item" data-aos="fade-left">
+                            <div class="story-year">2026</div>
+                            <div class="story-content">
+                                <h3>Pernikahan</h3>
+                                <p>Tahun ini menjadi puncak dari penantian dan doa-doa panjang kita. Mengikat janji suci
+                                    untuk sehidup semati mengarungi bahtera rumah tangga.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote Part -->
+                <div class="quote-part" style="margin-top: 100px;">
+                    <div class="quote-content-wrapper" data-aos="fade-up">
+                        <div class="quote-image-container" data-aos="fade-down" data-aos-delay="300">
+                            <img src="foto-quran.webp" alt="Prewedding Love" class="quote-img-top" loading="lazy" decoding="async">
+                        </div>
+                        <div class="quote-box" data-aos="zoom-in" data-aos-delay="500">
+                            <p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan
+                                untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia
+                                menjadikan di antaramu rasa kasih dan sayang."</p>
+                            <span class="quote-attr">(QS Ar-Rum: 21)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guestbook Section -->
+        <section id="guestbook" class="guestbook">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Konfirmasi Kehadiran</h2>
+                </div>
+
+                <div class="rsvp-content" data-aos="fade-up" style="margin-bottom: 50px;">
+
+                    <form id="rsvp-form" class="glass-form">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" placeholder="Contoh: Budi Santoso" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="attendance">Kehadiran</label>
+                            <select id="attendance" name="attendance" required>
+                                <option value="" disabled selected>Pilih Status Kehadiran</option>
+                                <option value="Hadir">Saya Akan Hadir</option>
+                                <option value="Tidak Hadir">Saya Tidak Bisa Hadir</option>
+                                <option value="Masih Ragu">Masih Ragu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Jumlah Tamu</label>
+                            <input type="number" id="guests" name="guests" min="1" max="5" value="1" required>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="btn-primary">Kirim Konfirmasi</button>
+                        <div id="form-message" class="hidden"></div>
+                    </form>
+                </div>
+
+                <div class="guestbook-container">
+                    <h3>Kirimkan Doa & Ucapan</h3>
+                    <form id="comment-form" class="glass-form" data-aos="fade-up">
+                        <div class="form-group">
+                            <label for="comment-name">Nama</label>
+                            <input type="text" id="comment-name" name="name" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-message">Ucapan / Doa</label>
+                            <textarea id="comment-message" name="message" rows="3"
+                                placeholder="Tuliskan ucapan & doa..." required></textarea>
+                        </div>
+                        <button type="submit" id="submit-comment-btn" class="btn-primary">Kirim Ucapan</button>
+                    </form>
+
+                    <div id="comment-list" class="comment-list" data-aos="fade-up">
+                        <div class="loading-comments">Memuat ucapan...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Streaming Section -->
+        <section id="streaming" class="streaming-section">
+            <div class="container text-center">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Live Streaming</h2>
+                    <p>Saksikan momen bahagia kami secara virtual melalui siaran langsung</p>
+                </div>
+                <div class="streaming-btn-container" data-aos="zoom-in">
+                    <a href="#" class="btn-primary"><i class="fas fa-video"></i> Join Live Streaming</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Galeri Foto</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item large" data-aos="zoom-in">
+                        <img src="galeri1.webp" alt="Gallery 1" loading="lazy" decoding="async">
+                    </div>
+                    <div class="gallery-item tall" data-aos="zoom-in">
+                        <img src="galeri2.webp" alt="Gallery 2" loading="lazy" decoding="async">
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="galeri3.webp" alt="Gallery 3" loading="lazy" decoding="async">
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="galeri4.webp" alt="Gallery 4" loading="lazy" decoding="async">
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="galeri5.webp" alt="Gallery 5" loading="lazy" decoding="async">
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="galeri6.webp" alt="Gallery 6" loading="lazy" decoding="async">
+                    </div>
+                    <div class="gallery-item large" data-aos="zoom-in">
+                        <img src="galeri7.webp" alt="Gallery 7" loading="lazy" decoding="async">
+                    </div>
+                    <div class="gallery-item tall" data-aos="zoom-in">
+                        <img src="galeri8.webp" alt="Gallery 8" loading="lazy" decoding="async">
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="galeri9.webp" alt="Gallery 9" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Person Section -->
+        <section id="contact" class="contact-section">
+            <div class="container text-center">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Hubungi Kami</h2>
+                    <p>Ada pertanyaan? Silakan hubungi kami:</p>
+                </div>
+                <div class="contact-links" data-aos="fade-up">
+                    <a href="https://wa.me/083853027516" target="_blank" class="contact-btn-wa">
+                        <i class="fab fa-whatsapp"></i> Humaidi (WA)
+                    </a>
+
+                    <a href="https://www.instagram.com/omaidi.mp?igsh=MWx4ZGkybWk3bXJtbQ==" target="_blank"
+                        class="contact-btn-wa"
+                        style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border: none;">
+                        <i class="fab fa-instagram"></i> Instagram Humaidi
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container text-center">
+                <p>Terima Kasih</p>
+                <h2 class="couple-name">Ghufron, S.sos. & Syarifah, S.pd.</h2>
+                <div class="social-footer">
+                    <p>Mengarungi Bahtera Rumah Tangga Bersama</p>
+                </div>
+                <div class="developer-credit" data-aos="fade-up">
+                    <p>Created by <a href="https://www.instagram.com/omaidi.mp?igsh=MWx4ZGkybWk3bXJtbQ=="
+                            target="_blank">Humaidi <i class="fab fa-instagram"></i></a></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
